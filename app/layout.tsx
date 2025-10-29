@@ -18,6 +18,9 @@ const cinzel = Cinzel_Decorative({
 export const metadata = {
   title: "Nocturne",
   description: "Modern ad-free creepypasta hub",
+  icons: {
+    icon: "/N.svg",
+  },
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
