@@ -6,19 +6,19 @@ export default function HomePage() {
   return (
     <main className="px-4 sm:px-8">
       <section className="flex flex-col items-center justify-center h-[80vh] text-center">
-        <div className="relative mb-4">
+        <div className="relative mb-6">
           <Image
             src="/nocturne-logo.svg"
             alt="Nocturne Logo"
-            width={300}
-            height={100}
+            width={800}
+            height={267}
             priority
-            className="drop-shadow-[0_0_25px_rgba(220,38,38,0.7)] hover:drop-shadow-[0_0_35px_rgba(220,38,38,0.9)] transition-all duration-300"
+            className="drop-shadow-[0_0_15px_rgba(220,38,38,0.4)] hover:drop-shadow-[0_0_20px_rgba(220,38,38,0.6)] transition-all duration-300 w-full max-w-3xl"
           />
         </div>
 
         <p className="font-sans text-gray-400 text-lg max-w-xl">
-          Where darkness speaks — an ad-free home for modern creepypastas.
+          Modern home for creepypastas, urban legends, horror stories
         </p>
 
         <div className="flex flex-wrap justify-center gap-4 mt-8">
@@ -37,7 +37,7 @@ export default function HomePage() {
         </div>
 
         <div className="mt-4 text-xs text-gray-600">
-          No ads · Curated · Content warnings
+          No ads · Curated · Simple
         </div>
       </section>
 
@@ -57,6 +57,7 @@ export default function HomePage() {
           author={story.author}
           excerpt={story.excerpt}
           tags={story.tags}
+          coverImage={story.coverImage}
         />
       ))}
     </div>

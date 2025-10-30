@@ -1,7 +1,7 @@
-type Props = { params: { handle: string } };
+type Props = { params: Promise<{ handle: string }> };
 
-export default function ProfilePage({ params }: Props) {
-  const { handle } = params;
+export default async function ProfilePage({ params }: Props) {
+  const { handle } = await params;
   return (
     <section className="px-4 sm:px-8 py-16 max-w-4xl mx-auto">
       <h1 className="font-gothic text-4xl text-red-600 mb-2">@{handle}</h1>
